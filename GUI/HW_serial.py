@@ -43,10 +43,10 @@ if __name__=='__main__':
     print(Check_Handle.Get_PortNum())
     print(Check_Handle.Get_PortName())
     print(Check_Handle.Get_PortNameList())
-    ser= SerialOperation(Check_Handle.Get_PortName(),115200,timeout=0)
+    # ser= SerialOperation(Check_Handle.Get_PortName(),115200,timeout=0)
 
-    while 1:
-        if ser.in_waiting > 0 :
-            read_data=ser.read(ser.in_waiting)
-            ser.reset_input_buffer()
-            print(read_data)   
+    # while 1:
+    #     if ser.in_waiting > 0 :
+    #         read_data=ser.read(ser.in_waiting)
+    #         ser.reset_input_buffer()
+    #         print(read_data)   
